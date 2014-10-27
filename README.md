@@ -2,7 +2,7 @@
 
 Will circle back to clean this up.
 
-Basice instructions:
+Basic instructions:
 
 1. Go to [slideshowpro.net](http://slideshowpro.net)
 2. Click on Account Center
