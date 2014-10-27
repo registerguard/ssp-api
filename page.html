@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	
+	<title>ssp</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+	
+	<style></style>
+	
+</head>
+<body>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	
+	<script>
+		
+		$(document).ready(function() {
+			
+			$.getJSON("//YOUR/SITE/index.php?callback=?", function(data) {
+				
+				var $sspdata = $.parseJSON(data);
+				var $sspdivs = "";
+				
+				// Print array
+				// console.log($sspdata);
+				
+				$.each($sspdata, function(i, v) {
+					
+					var sspcaption = v.caption;
+					
+					$sspdivs += "<div><img src='" + v.url + "'><p>" + sspcaption + "</p></div>"
+					
+				});
+				
+				$('body').html($sspdivs);
+				
+			});
+			
+		});
+		
+	</script>
+	
+</body>
+</html>
