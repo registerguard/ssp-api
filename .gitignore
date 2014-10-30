@@ -53,10 +53,5 @@ sitemap.xml.gz*~
 
 # PROJECT-SPECIFIC #
 ####################
-client_secrets.json
-secrets.json
-analytics.dat
-httplib2/*
-apiclient/*
-oauth2client/*
-uritemplate/*
+
+classes/

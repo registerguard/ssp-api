@@ -9,8 +9,6 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	
-	<link rel="stylesheet" href="owlcarousel/owl.carousel.css">
-	
 	<style></style>
 	
 </head>
@@ -22,15 +20,14 @@
 		
 		$(document).ready(function() {
 			
-			$.getJSON("//YOUR/SITE/index.php?callback=?", function(data) {
+			$.getJSON('index.php?callback=?', function($data) {
 				
-				var $sspdata = $.parseJSON(data);
-				var $sspdivs = "";
+				var $sspdivs = '';
 				
-				// Print array
-				// console.log($sspdata);
+				// Print array:
+				console.log('Data:', $data);
 				
-				$.each($sspdata, function(i, v) {
+				$.each($data, function(i, v) {
 					
 					var sspcaption = v.caption;
 					
