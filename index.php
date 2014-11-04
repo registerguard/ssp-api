@@ -9,6 +9,7 @@
 	$data = array();
 	$meta = array();
 	$index = 0;
+	$slideshow = 1111111; // Album ID.
 	
 	# When your application is live, it is a good idea to enable caching.
 	# You need to provide a string specific to this page and a time limit 
@@ -22,7 +23,7 @@
 	$director->format->add(array('name' => 'large', 'width' => '1960', 'height' => '1960', 'crop' => 0, 'quality' => 100, 'sharpening' => 0));
 	
 	# Make API call using get_album method. Replace '1' with the numerical ID for your album:
-	$album = $director->album->get(456240, array('images_only' => true));
+	$album = $director->album->get($slideshow, array('images_only' => true));
 
 	# Set images variable for easy access:
 	$contents = $album->contents;
