@@ -1,8 +1,37 @@
 #ssp api
 
-Will circle back to clean this up.
+## ./secrets/config.php example
 
-Basic instructions:
+```php
+
+<?php
+	
+	function getSecret(){
+		
+		$secret = array(
+			'key' => 'local-asdfasdfasdfasdfasdfasdfasdfasdf',
+			'url' => 'wherever.your/local/setup/is/hosted'
+		);
+		
+		return $secret;
+		
+	}
+	
+?>
+
+```
+
+## Overview
+
+What you're using this for is to take SSP photos and throw them out in JSON format for Galleria to grab on to.
+
+Given that SlideShow Pro is no more, I've included all of the Directory code in this repo.
+
+For RG credentials see: http://slideshow.registerguard.com/slideshowpro/index.php?/accounts/info
+
+See example.json for example of SSP > Galleria. For more on that process see: [RG wiki](https://github.com/registerguard/rg/wiki/Galleria-integration) (private)
+
+## ~~Basic~~ Old instructions:
 
 1. Go to [slideshowpro.net](http://slideshowpro.net)
 2. Click on Account Center

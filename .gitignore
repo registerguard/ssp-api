@@ -1,5 +1,8 @@
 # https://github.com/github/gitignore
 
+secrets/config.php
+classes/cache/*/*
+
 # COMPILED SOURCE #
 ###################
 
